@@ -17,11 +17,71 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: theme('colors.slate.100');
+  background-image: radial-gradient(theme('colors.slate.400') 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+}
+
+.highlight {
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.highlight::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 115%;
+  height: 100%;
+  z-index: -1;
+  /* Place the pseudo element right under the content */
+  bottom: 0.15rem;
+  left: -0.25rem;
+  background: linear-gradient(to top, theme('colors.emerald.300') 50%, transparent 40%);
+  animation-name: "highlight";
+  animation-duration: 1.5s;
+}
+
+@keyframes highlight {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  50% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: 115%;
+    opacity: 1;
+  }
+}
+
+.button-link-callout {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+
+.button-link:last-child .button-link-callout {
+  display: inline-block;
+  right: -4.75rem;
+  bottom: -4.75rem;
+  padding: .75rem;
+}
+
+.button-link:last-child .button-link-callout::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  width: 100px;
+  height: 2px;
+  background-color: theme('colors.slate.700');
 }
