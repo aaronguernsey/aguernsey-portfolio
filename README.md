@@ -1,3 +1,16 @@
+# Overview
+
+Heyo 👋
+
+I am a Full-Stack Engineer, UX/UI Designer, and Writer.
+
+- Play [Tip Tap Go](https://tiptapgo.app)
+- Read my screenplays at [Guernsey Bros](https://guernseybros.com)
+
+If you have an opportunity or simply want to chat, feel free to [connect with me](https://www.linkedin.com/in/aaronguernsey/).
+
+## Next.js
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
