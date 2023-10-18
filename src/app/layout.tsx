@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   robots:
     "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
-    siteName: "@site",
-    title: "@creator",
+    siteName: content.title,
+    title: content.title,
     locale: "en_US",
     url: "https://aaronguernsey.com",
     description:
